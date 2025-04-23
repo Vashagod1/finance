@@ -1,0 +1,172 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Финансы/1.0.0": {
+        "dependencies": {
+          "System.Data.Odbc": "10.0.0-preview.3.25171.5",
+          "System.Data.OleDb": "10.0.0-preview.3.25171.5"
+        },
+        "runtime": {
+          "Финансы.dll": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/10.0.0-preview.3.25171.5": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "10.0.0-preview.3.25171.5",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-preview.3.25171.5"
+        },
+        "runtime": {
+          "lib/net9.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      },
+      "System.Data.Odbc/10.0.0-preview.3.25171.5": {
+        "runtime": {
+          "lib/net9.0/System.Data.Odbc.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net9.0/System.Data.Odbc.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          },
+          "runtimes/win/lib/net9.0/System.Data.Odbc.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      },
+      "System.Data.OleDb/10.0.0-preview.3.25171.5": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "10.0.0-preview.3.25171.5",
+          "System.Diagnostics.PerformanceCounter": "10.0.0-preview.3.25171.5"
+        },
+        "runtime": {
+          "lib/net9.0/System.Data.OleDb.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.Data.OleDb.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/10.0.0-preview.3.25171.5": {
+        "runtime": {
+          "lib/net9.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      },
+      "System.Diagnostics.PerformanceCounter/10.0.0-preview.3.25171.5": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "10.0.0-preview.3.25171.5"
+        },
+        "runtime": {
+          "lib/net9.0/System.Diagnostics.PerformanceCounter.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.Diagnostics.PerformanceCounter.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/10.0.0-preview.3.25171.5": {
+        "runtime": {
+          "lib/net9.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Финансы/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Configuration.ConfigurationManager/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rpAIQlaC6r04B8nD//rIDEVdQMAKCeAN9ypDx34gS77Q4ET9+sE+4ApziGvGv5Ve50bT5PoJAt/29JT9LmRhTA==",
+      "path": "system.configuration.configurationmanager/10.0.0-preview.3.25171.5",
+      "hashPath": "system.configuration.configurationmanager.10.0.0-preview.3.25171.5.nupkg.sha512"
+    },
+    "System.Data.Odbc/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3ixLdpsjEEekZghX3JQUIh0KOZep5Ys9dJjoBr3ESux2ZE7zA8kT4U3npjcj+UihQNhGN3Oj91yMZPF/a/ZP9g==",
+      "path": "system.data.odbc/10.0.0-preview.3.25171.5",
+      "hashPath": "system.data.odbc.10.0.0-preview.3.25171.5.nupkg.sha512"
+    },
+    "System.Data.OleDb/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W0AqmMavh1MXIKGxP6885uMHeN5f/OZ7S4zb5cjZhgsMOOk4yBVb2tAPFMTUvpJ+0ImI4q9H0XT3MuVtlKUJGw==",
+      "path": "system.data.oledb/10.0.0-preview.3.25171.5",
+      "hashPath": "system.data.oledb.10.0.0-preview.3.25171.5.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ABk8eOWyQ9Pgmz63EE9hmj0G0eLnWItwM9NV0OGMUOEdseVN1PeA1ryQUIQr5C1odDG2ip4oBTLGSrb5+Z2S3w==",
+      "path": "system.diagnostics.eventlog/10.0.0-preview.3.25171.5",
+      "hashPath": "system.diagnostics.eventlog.10.0.0-preview.3.25171.5.nupkg.sha512"
+    },
+    "System.Diagnostics.PerformanceCounter/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3lz15We+Dj+9mr0IvQiahNp1aIUh7oDo+pZpeo0MniZ3SUjMka2pA48X+U+hrMz45GtSVnEs86mh5jCLidmsyQ==",
+      "path": "system.diagnostics.performancecounter/10.0.0-preview.3.25171.5",
+      "hashPath": "system.diagnostics.performancecounter.10.0.0-preview.3.25171.5.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qsIqM920BE+fPW5RDNUPx2fx3Uk6ZCi7UiUqpGKIWUdt8aTCxdemeh4NaWFQhwd61JDnUsfNFeY8yMYbNzS20g==",
+      "path": "system.security.cryptography.protecteddata/10.0.0-preview.3.25171.5",
+      "hashPath": "system.security.cryptography.protecteddata.10.0.0-preview.3.25171.5.nupkg.sha512"
+    }
+  }
+}

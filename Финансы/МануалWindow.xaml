@@ -1,0 +1,128 @@
+﻿<Window x:Class="Финансы.МануалWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Мануал" Height="500" Width="800">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </Window.Resources>
+
+   <Grid Margin="10">
+    <TabControl>
+
+        <!-- Склады -->
+        <TabItem Header="Склады">
+            <StackPanel>
+
+                <!-- Поиск -->
+                <Grid Margin="0,0,0,10">
+                    <TextBox x:Name="tbПоискСкладов" Width="200"
+                             TextChanged="tbПоискСкладов_TextChanged"/>
+                    <TextBlock Text="Поиск..."
+                               Foreground="Gray"
+                               Margin="5,0,0,0"
+                               VerticalAlignment="Center"
+                               IsHitTestVisible="False"
+                               Visibility="{Binding Text.IsEmpty, ElementName=tbПоискСкладов, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                </Grid>
+
+                <!-- Форма добавления/удаления -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <!-- Название склада -->
+                    <Grid Margin="5">
+                        <TextBox x:Name="tbНазваниеСклада" Width="150"/>
+                        <TextBlock Text="Название склада"
+                                   Foreground="Gray"
+                                   Margin="5,0,0,0"
+                                   VerticalAlignment="Center"
+                                   IsHitTestVisible="False"
+                                   Visibility="{Binding Text.IsEmpty, ElementName=tbНазваниеСклада, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    </Grid>
+                    <!-- Адрес склада -->
+                    <Grid Margin="5">
+                        <TextBox x:Name="tbАдресСклада" Width="200"/>
+                        <TextBlock Text="Адрес склада"
+                                   Foreground="Gray"
+                                   Margin="5,0,0,0"
+                                   VerticalAlignment="Center"
+                                   IsHitTestVisible="False"
+                                   Visibility="{Binding Text.IsEmpty, ElementName=tbАдресСклада, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    </Grid>
+                    <Button Content="Добавить склад" Click="ДобавитьСклад_Click" Margin="5"/>
+                    <Button Content="Удалить склад" Click="УдалитьСклад_Click" Margin="5"/>
+                </StackPanel>
+
+                <!-- Таблица -->
+                <DataGrid x:Name="dgСклады"
+                          AutoGenerateColumns="True"
+                          IsReadOnly="True"
+                          VerticalAlignment="Stretch"
+                          HorizontalAlignment="Stretch"/>
+
+            </StackPanel>
+        </TabItem>
+
+        <!-- Товары -->
+        <TabItem Header="Товары">
+            <StackPanel>
+
+                <!-- Поиск -->
+                <Grid Margin="0,0,0,10">
+                    <TextBox x:Name="tbПоискТоваров" Width="200"
+                             TextChanged="tbПоискТоваров_TextChanged"/>
+                    <TextBlock Text="Поиск..."
+                               Foreground="Gray"
+                               Margin="5,0,0,0"
+                               VerticalAlignment="Center"
+                               IsHitTestVisible="False"
+                               Visibility="{Binding Text.IsEmpty, ElementName=tbПоискТоваров, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                </Grid>
+
+                <!-- Форма добавления/удаления -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <!-- Название товара -->
+                    <Grid Margin="5">
+                        <TextBox x:Name="tbНазваниеТовара" Width="150"/>
+                        <TextBlock Text="Название товара"
+                                   Foreground="Gray"
+                                   Margin="5,0,0,0"
+                                   VerticalAlignment="Center"
+                                   IsHitTestVisible="False"
+                                   Visibility="{Binding Text.IsEmpty, ElementName=tbНазваниеТовара, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    </Grid>
+                    <!-- Единица измерения -->
+                    <Grid Margin="5">
+                        <TextBox x:Name="tbЕдИзм" Width="100"/>
+                        <TextBlock Text="Ед. изм."
+                                   Foreground="Gray"
+                                   Margin="5,0,0,0"
+                                   VerticalAlignment="Center"
+                                   IsHitTestVisible="False"
+                                   Visibility="{Binding Text.IsEmpty, ElementName=tbЕдИзм, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    </Grid>
+                    <!-- Цена -->
+                    <Grid Margin="5">
+                        <TextBox x:Name="tbЦена" Width="100" KeyDown="tbЦена_KeyDown"/>
+                        <TextBlock Text="Цена"
+                                   Foreground="Gray"
+                                   Margin="5,0,0,0"
+                                   VerticalAlignment="Center"
+                                   IsHitTestVisible="False"
+                                   Visibility="{Binding Text.IsEmpty, ElementName=tbЦена, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    </Grid>
+                    <Button Content="Добавить товар" Click="ДобавитьТовар_Click" Margin="5"/>
+                    <Button Content="Удалить товар" Click="УдалитьТовар_Click" Margin="5"/>
+                </StackPanel>
+
+                <!-- Таблица -->
+                <DataGrid x:Name="dgТовары"
+                          AutoGenerateColumns="True"
+                          IsReadOnly="True"
+                          VerticalAlignment="Stretch"
+                          HorizontalAlignment="Stretch"/>
+
+            </StackPanel>
+        </TabItem>
+
+     </TabControl>
+    </Grid>
+</Window>
